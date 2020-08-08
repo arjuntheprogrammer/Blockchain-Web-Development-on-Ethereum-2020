@@ -5,6 +5,21 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "/",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "lib": ["es2018", "dom"]
+  },
   "files": [],
   "references": [
     {
@@ -13,5 +28,5 @@
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ]
 }

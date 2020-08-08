@@ -66,5 +66,7 @@ Course Link: <https://www.udemy.com/course/complete-blockchain-web-application-c
     - "node_modules/bootstrap/dist/js/bootstrap.min.js"
 - ng generate component poll-create
 - ng generate component poll
+- ng generate component poll-vote
+- npm install apexcharts --save
 
 ---

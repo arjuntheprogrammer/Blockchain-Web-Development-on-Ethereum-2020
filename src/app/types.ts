@@ -1,9 +1,10 @@
 export interface Poll {
   id: number; // 12
   question: string; // Which days of week you like most?
-  results: number; // [0, 0, 0, 0, 5, 7, 2]
+  results: number[]; // [0, 0, 0, 0, 5, 7, 2]
   options: string[]; // ["Monday", "Tuesday", ...]
   thumbnail: string; // https://image.png
+  voted: boolean;
 }
 
 export interface Voter {
