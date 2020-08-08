@@ -68,5 +68,6 @@ Course Link: <https://www.udemy.com/course/complete-blockchain-web-application-c
 - ng generate component poll
 - ng generate component poll-vote
 - npm install apexcharts --save
+- ng generate service poll
 
 ---
