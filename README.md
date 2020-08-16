@@ -84,7 +84,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## SCREENSHOTS
 
+Application Web View:
 ![image](https://user-images.githubusercontent.com/15984084/90333658-5aaccb80-dfe5-11ea-8732-11fa37edc600.png)
+
+Ganache Transactions
+![image](https://user-images.githubusercontent.com/15984084/90335684-47552c80-dff4-11ea-9cb5-4a20857a9dfc.png)
 
 ---
 
