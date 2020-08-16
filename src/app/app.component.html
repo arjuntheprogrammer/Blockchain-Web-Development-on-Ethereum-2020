@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand mr-auto" href="#">Blockchain Poll</a>
+  <a class="navbar-brand mr-auto" href="#">Blockchain Polls</a>
   <button
     type="button"
     class="btn btn-secondary"
@@ -9,8 +9,8 @@
   </button>
 </nav>
 
-<section class="jumbotron bg-light text-center">
-  <h1>Pools Rethinked</h1>
+<section class="jumpotron bg-light text-center">
+  <h1>Polls Rethinked</h1>
   <p class="lead text-muted">
     Powered By Blockchain
   </p>
@@ -26,9 +26,9 @@
     <app-poll
       *ngFor="let poll of polls | async"
       [question]="poll.question"
-      [pollImage]="poll.thumbnail"
-      [votes]="poll.results"
       [voted]="poll.voted"
+      [votes]="poll.results"
+      [pollImage]="poll.thumbnail"
       (click)="setActivePoll(poll)"
     ></app-poll>
   </div>
@@ -41,7 +41,6 @@
       [options]="activePoll.options"
       [results]="activePoll.results"
       (pollVoted)="handlePollVote($event)"
-    >
-    </app-poll-vote>
+    ></app-poll-vote>
   </div>
 </div>

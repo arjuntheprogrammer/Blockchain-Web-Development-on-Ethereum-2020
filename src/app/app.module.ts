@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PollComponent } from './poll/poll.component';
 import { PollVoteComponent } from './poll-vote/poll-vote.component';
 import { PollService } from './poll-service/poll.service';
+import { Web3Service } from './blockchain/web3.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { PollService } from './poll-service/poll.service';
     PollVoteComponent,
   ],
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
-  providers: [PollService],
+  providers: [PollService, Web3Service],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

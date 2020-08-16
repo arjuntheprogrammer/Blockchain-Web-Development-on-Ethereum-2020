@@ -1,3 +1,9 @@
+# Blockchain Web Development on Ethereum [2020]
+
+Course Link: <https://www.udemy.com/course/complete-blockchain-web-application-course-on-ethereum/>
+
+---
+
 # BlockchainPoll
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
@@ -25,12 +31,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
----
-
-# Blockchain Web Development on Ethereum [2020]
-
-Course Link: <https://www.udemy.com/course/complete-blockchain-web-application-course-on-ethereum/>
 
 ---
 
@@ -69,5 +69,29 @@ Course Link: <https://www.udemy.com/course/complete-blockchain-web-application-c
 - ng generate component poll-vote
 - npm install apexcharts --save
 - ng generate service poll
+- npm install web3 --save
+- ng generate service web3
+
+---
+
+## PROJECT STRUCTURE
+
+<img width="600" alt="Screenshot 2020-08-08 at 6 05 58 PM" src="https://user-images.githubusercontent.com/15984084/89710557-ebf6bf00-d9a1-11ea-9cdd-f3193d5b7b3e.png">
+
+<img width="600" alt="Screenshot 2020-08-08 at 6 07 38 PM" src="https://user-images.githubusercontent.com/15984084/89710592-1b0d3080-d9a2-11ea-962c-a963cd7c9420.png">
+
+---
+
+## SCREENSHOTS
+
+![image](https://user-images.githubusercontent.com/15984084/90333658-5aaccb80-dfe5-11ea-8732-11fa37edc600.png)
+
+---
+
+## Course Completion Certificate
+
+<https://www.udemy.com/certificate/UC-f345785d-a8f7-44b2-a06a-8a7955b00763/>
+
+![image](https://udemy-certificate.s3.amazonaws.com/image/UC-f345785d-a8f7-44b2-a06a-8a7955b00763.jpg)
 
 ---

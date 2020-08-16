@@ -8,11 +8,18 @@ import { PollService } from './poll-service/poll.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  // title = 'blockchain-poll';
   showForm = false;
   activePoll: Poll = null;
+
   polls = this.ps.getPolls();
+
   constructor(private ps: PollService) {}
+
+  ngOnInit() {
+    this.ps.onEvent('PollCreated').subscribe(() => {
+      this.polls = this.ps.getPolls();
+    });
+  }
 
   setActivePoll(poll) {
     this.activePoll = null;
@@ -25,6 +32,7 @@ export class AppComponent {
   handlePollCreate(poll: PollForm) {
     this.ps.createPoll(poll);
   }
+
   handlePollVote(pollVoted: PollVote) {
     this.ps.vote(pollVoted.id, pollVoted.vote);
   }

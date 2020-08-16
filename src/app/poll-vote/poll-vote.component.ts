@@ -1,14 +1,14 @@
 import {
   Component,
   OnInit,
-  ɵɵsyntheticHostListener,
   Input,
   AfterViewInit,
   Output,
   EventEmitter,
 } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+
 import * as ApexCharts from 'apexcharts';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PollVote } from '../types';
 
 @Component({
@@ -33,11 +33,12 @@ export class PollVoteComponent implements AfterViewInit {
     });
   }
 
-  ngAfterViewInit(): void {
+  ngAfterViewInit() {
     if (this.voted) {
       this.generateChart();
     }
   }
+
   submitForm() {
     const pollVoted: PollVote = {
       id: this.id,
